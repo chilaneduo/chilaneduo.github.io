@@ -1,104 +1,198 @@
 html,body {
-    margin:0;
-    overflow-x:hidden;
+  margin:0;
+  overflow-x:hidden;
 }
 p {
-    position:relative;
-    font-family:Eco, sans;
+  position:relative;
+  font-family:Eco, sans;
+}
+span {
+  font-family:Eco, sans;
 }
 .top {
-    animation: fadeIn 1.0s ease forwards;
+  animation: fadeIn 1.0s ease forwards;
 }
 .c {
-    font-family:Eco, sans;
-    font-size:50pt;
-    color:#d40;
+  font-family:Eco, sans;
+  font-size:50pt;
+  color:#d40;
 }
 .x {
-    font-family:EcoB, sans;
-    font-style:bold;
-    font-size:22pt;
-    position:absolute;
-    border:none;
-    background:none;
-    color:#d00;
-    line-height:35pt;
-    padding:10pt;
-    cursor:pointer;
+  font-family:EcoB, sans;
+  font-style:bold;
+  font-size:22pt;
+  position:absolute;
+  border:none;
+  background:none;
+  color:#d00;
+  line-height:35pt;
+  padding:10pt;
+  cursor:pointer;
 }
 .b {
-    background:none;
-    border:none;
-    width:0;
-    height:0;
-    opacity:0.85;
-    cursor:pointer;
-    transition: 0.3s;
+  background:none;
+  border:none;
+  width:0;
+  height:0;
+  opacity:0.85;
+  cursor:pointer;
+  transition: 0.3s;
 }
 .b:hover {
-    opacity:1;
+  opacity:1;
 }
-.fade-in {
+.slogan {
+  animation: fadeIn 2.0s ease forwards;
+  font-size:50pt;
+  color:#666;
+}
+.topics {
   animation: fadeIn 2.0s ease forwards;
 }
-@font-face {
-    font-family: Eco; src: url('Economica-Regular.ttf');
+.s {
+  position:absolute;
+  color:#d00;
+}
+.sc {
+  position:absolute;
+  color:#666;
+}
+#a {
+  animation:scroll 12s;
+  animation-delay:-9s;
+  animation-iteration-count:infinite;
+}
+#b {
+  animation:scroll 12s;
+  animation-delay:-6s;
+  animation-iteration-count:infinite;
+}
+#c {
+  animation:scroll 12s;
+  animation-delay:-3s;
+  animation-iteration-count:infinite;
+}
+#d {
+  animation:scroll 12s;
+  animation-delay:0s;
+  animation-iteration-count:infinite;
+}
+#m {
+  animation:fit 12s;
+  animation-iteration-count:infinite;
+}
+.t {
+  text-align:center;
+  font-size:40pt;
+  color:#fff;
+  background-color:#f00;
+  position: absolute;
+  top: 790px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.arr {
+  margin-left:50%;
+  top:95%;
+  animation: hover 2s ease-in-out;
+  position:absolute;
+  animation-iteration-count:infinite;
 }
 @font-face {
-    font-family: EcoB; src: url('Economica-Bold.ttf');
+  font-family: Eco; src: url('Economica-Regular.ttf');
 }
 @font-face {
-    font-family: EcoI; src: url('Economica-Italic.ttf');
+  font-family: EcoB; src: url('Economica-Bold.ttf');
 }
 @font-face {
-    font-family: EcoBI; src: url('Economica-BoldItalic.ttf');
+  font-family: EcoI; src: url('Economica-Italic.ttf');
 }
 @font-face {
-    font-family: Cal; src: url('Calli.ttf');
+  font-family: EcoBI; src: url('Economica-BoldItalic.ttf');
+}
+@font-face {
+  font-family: Cal; src: url('Calli.ttf');
 }
 @keyframes fadeIn{
-  0%{
+0%{
+  opacity:0;
+}
+50% {
+  opacity:0;
+}
+100% {
+  opacity:1;
+}
+}
+@keyframes scroll{
+  0% {
     opacity:0;
+    display:none;
   }
-  50% {
+  1% {
+    display:block;
+  }
+  5% {
+    opacity:1;
+    display:block;
+  }
+  20% {
+    opacity:1;
+    display:block;
+  }
+  23% {
     opacity:0;
+    display:none;
   }
   100% {
-    opacity:1;
+    opacity:0;
+    display:none;
   }
 }
-@-moz-keyframes fadeIn {
-  0%{
-    opacity:0;
+@keyframes fit{
+  0% {
+    margin-left:121pt;
+  }
+  5% {
+    margin-left:75pt;
+  }
+  20% {
+    margin-left:75pt;
+  }
+  25% {
+    margin-left:155pt;
+  }
+  45% {
+    margin-left:155pt;
   }
   50% {
-    opacity:0;
+    margin-left:122pt;
+  }
+  70% {
+    margin-left:122pt;
+  }
+  75% {
+    margin-left:121pt;
+  }
+  95% {
+    margin-left:121pt;
   }
   100% {
-    opacity:1;
+    margin-left:121pt;
   }
 }
-
-@-webkit-keyframes fadeIn {
-  0%{
-    opacity:0;
+@keyframes hover{
+  0% {margin-top:0px;
   }
-  50% {
-    opacity:0;
+  50% {margin-top:10px;
   }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0%{
-    opacity:0;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+  100% {margin-top:0px;
   }
 }
