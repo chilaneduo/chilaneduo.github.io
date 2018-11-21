@@ -24,6 +24,19 @@ p {
     color:#d00;
     line-height:35pt;
     padding:10pt;
+    cursor:pointer;
+}
+.b {
+    background:none;
+    border:none;
+    width:0;
+    height:0;
+    opacity:0.85;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.b:hover {
+    opacity:1;
 }
 .fade-in {
   animation: fadeIn 2.0s ease forwards;
@@ -42,9 +55,6 @@ p {
 }
 @font-face {
     font-family: Cal; src: url('Calli.ttf');
-}
-@font-face {
-    font-family: Ch; src: url('Ch.woff');
 }
 @keyframes fadeIn{
   0%{
