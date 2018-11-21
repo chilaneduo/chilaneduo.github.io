@@ -1,17 +1,31 @@
 html,body {
     margin:0;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 p {
     position:relative;
     font-family:Eco, sans;
 }
+.top {
+    animation: fadeIn 1.0s ease forwards;
+}
 .c {
     font-family:Eco, sans;
     font-size:50pt;
+    color:#d40;
+}
+.x {
+    font-family:EcoB, sans;
+    font-style:bold;
+    font-size:22pt;
     position:absolute;
     border:none;
-    border-radius:10px;
+    background:none;
+    color:#d00;
+    line-height:35pt;
+}
+.fade-in {
+  animation: fadeIn 2.0s ease forwards;
 }
 @font-face {
     font-family: Eco; src: url('Economica-Regular.ttf');
@@ -30,4 +44,15 @@ p {
 }
 @font-face {
     font-family: Ch; src: url('Ch.woff');
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
