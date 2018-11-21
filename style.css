@@ -23,6 +23,7 @@ p {
     background:none;
     color:#d00;
     line-height:35pt;
+    padding:10pt;
 }
 .fade-in {
   animation: fadeIn 2.0s ease forwards;
@@ -46,6 +47,41 @@ p {
     font-family: Ch; src: url('Ch.woff');
 }
 @keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0%{
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0%{
+    opacity:0;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
   0%{
     opacity:0;
   }
