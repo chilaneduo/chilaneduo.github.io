@@ -6,6 +6,13 @@ p {
     position:relative;
     font-family:Eco, sans;
 }
+.c {
+    font-family:Eco, sans;
+    font-size:50pt;
+    position:absolute;
+    border:none;
+    border-radius:10px;
+}
 @font-face {
     font-family: Eco; src: url('Economica-Regular.ttf');
 }
@@ -17,4 +24,10 @@ p {
 }
 @font-face {
     font-family: EcoBI; src: url('Economica-BoldItalic.ttf');
+}
+@font-face {
+    font-family: Cal; src: url('Calli.ttf');
+}
+@font-face {
+    font-family: Ch; src: url('Ch.woff');
 }
